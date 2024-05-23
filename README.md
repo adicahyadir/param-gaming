@@ -1,64 +1,56 @@
-# Param Labs / Param Gaming
+# paramgaming-bot
 
-Param Labs or Param Gaming is a dynamic gaming ecosystem that fuels extraordinary experiences through cutting-edge Web3 integration. From the acclaimed @KiraverseGame to @Pixeltopoly and beyond, we are dedicated to pushing the boundaries of gaming innovation.
+paramgaming-bot is a Node.js script designed to interact with the Param Gaming API to fetch tasks, clear them, and claim rewards automatically.
 
-## New User Registration
+## Register
 
-Don't have an account yet? Click [here](https://paramgaming.com/?referCode=0A1AC48558#/signup) to register with my referral code.
+Here is the link: https://paramgaming.com/?referCode=6C0ADF94FB#/signup
 
-## How to Use Scripts
+## Installation
 
-### Obtaining Authentication Token
+1. Clone the repository:
 
-1. Open your browser's developer tools (press F12 or right-click - inspect).
-2. Navigate to the "Network" tab.
-3. Refresh the webpage.
-4. Select an item that appears (e.g., user points or referral summary).
-5. Copy the token located under the Authorization section (e.g., eyxxxxxxxxxxxx).
+   ```bash
+   git clone https://github.com/dante4rt/paramgaming-bot.git
+   ```
 
-### Running Scripts
+2. Install dependencies:
 
-1. Copy the required script.
-2. Open your browser's developer tools (press F12 or right-click - inspect).
-3. Go to the "Console" tab.
-4. Type "allow pasting" and press Enter.
-5. Paste the copied script and press Enter.
-6. Done.
+   ```bash
+   cd paramgaming-bot
+   npm install
+   ```
 
----
+3. Create a `.env` file in the root directory and provide the following environment variables:
 
-For more information and to explore the Param Gaming ecosystem, visit [Param Gaming Register](https://paramgaming.com/?referCode=0A1AC48558#/signup).
+   ```plaintext
+   USER_EMAIL=your-email@example.com
+   USER_PASSWORD=your-password
+   ```
 
+## Usage
 
-# TRANSLATE INDONESIA
+To run the bot, execute the following command:
 
-# Param Labs / Param Gaming
+```bash
+npm start
+```
 
-Param Labs atau Param Gaming adalah ekosistem gaming yang dinamis yang menggerakkan pengalaman luar biasa melalui integrasi Web3 yang terkini. Mulai dari @KiraverseGame yang terkenal hingga @Pixeltopoly dan di luar itu, kami berdedikasi untuk mendorong batas-batas inovasi gaming.
+The bot will log in to your Param Gaming account, fetch incomplete tasks, clear them, and claim rewards.
 
-## Registrasi Pengguna Baru
+### Obtaining Authorization Token
 
-Belum punya akun? Klik [di sini](https://paramgaming.com/?referCode=0A1AC48558#/signup) untuk mendaftar dengan kode referral saya.
+To obtain the authorization token required for the bot, follow these steps:
 
-## Cara Menggunakan Skrip
+1. Open the Param Gaming website and log in to your account.
+2. Open the Developer Tools (usually by pressing F12 or right-clicking and selecting "Inspect").
+3. Navigate to the "Network" tab.
+4. Perform any action on the Param Gaming website that requires authorization, such as fetching tasks.
+5. Look for a request in the Network tab that contains the authorization token in the request headers.
+6. Copy the authorization token from the request headers.
+7. Paste the authorization token.
+8. Done!
 
-### Mendapatkan Token Otentikasi
+## Contributing
 
-1. Buka alat pengembang browser Anda (tekan F12 atau klik kanan - inspeksi).
-2. Beralih ke tab "Jaringan".
-3. Muat ulang halaman web.
-4. Pilih item yang muncul (misalnya, poin pengguna atau ringkasan referral).
-5. Salin token yang terletak di bawah bagian Otentikasi (misalnya, eyxxxxxxxxxxxx).
-
-### Menjalankan Skrip
-
-1. Salin skrip yang dibutuhkan.
-2. Buka alat pengembang browser Anda (tekan F12 atau klik kanan - inspeksi).
-3. Beralih ke tab "Konsol".
-4. Ketik "allow pasting" dan tekan Enter.
-5. Tempelkan skrip yang disalin dan tekan Enter.
-6. Selesai.
-
----
-
-Untuk informasi lebih lanjut dan menjelajahi ekosistem Param Gaming, kunjungi [Param Gaming Register](https://paramgaming.com/?referCode=0A1AC48558#/signup).
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
